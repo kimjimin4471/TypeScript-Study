@@ -3,59 +3,48 @@
 
 
 
-# React에 TypeScript 적용
+**Create React App에 TypeScript적용**
 
 ```
-npx create-react-app typescript-react-tutorial --scripts-version=react-scripts-ts
-```
-
-
-
-# 설치
-
-```
-npm i typescript ts-loader @types/react -D
+npx create-react-app typescript-app(프로젝트이름) --template typescript
 ```
 
 
 
-# tsconfig.json 설정
+**기존 프로젝트에 추가**
 
 ```
-{
-  "compilerOptions": {
-    "sourceMap": true,  // 소스맵(*.map) 파일 생성 여부
-    "jsx": "react"  // Resolve: Cannot use JSX unless '--jsx' flag is provided
-  }
-}
+npm install --save @types/react @types/react-dom
+npm install --save-dev typescript
 ```
 
 
 
-# webpack.config.js 설정
+**styled-component**
 
 ```
-...
-module: {
-  rules: [
-    ...
-    ,
-    {
-       test: /\.tsx?$/,
-       loader: 'ts-loader'
-    }
-  ]
-},
-resolve: {
-  modules: [path.join(__dirname, 'src'), 'node_modules'],
-  extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss', '.json'],
-},
-...
+npm i --save-dev @types/styled-components
 ```
 
 
 
-# component 생성
+**react-router-dom**
+
+```
+npm i --save-dev @types/react-router-dom
+```
+
+
+
+**axios**
+
+```
+npm install axios
+```
+
+
+
+**Component 생성**
 
 ```
 import * as React from 'react';
@@ -67,6 +56,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+
 
 
 
