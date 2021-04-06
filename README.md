@@ -3,18 +3,18 @@
 
 
 
-# 설치
-
-```
-npm i typescript ts-loader @types/react -D
-```
-
-
-
 # React에 TypeScript 적용
 
 ```
 npx create-react-app typescript-react-tutorial --scripts-version=react-scripts-ts
+```
+
+
+
+# 설치
+
+```
+npm i typescript ts-loader @types/react -D
 ```
 
 
