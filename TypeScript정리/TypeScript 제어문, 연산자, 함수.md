@@ -9,7 +9,7 @@
 - if문
 
   - 숫자 타입인데 숫자가 0이면 false를 나타내고, 0이 아닌 나머지 값은 true를 나타냄
-  - 문자열의 경우 빈 값은 false, 값이 있으면 true이다.
+  - 문자열의 경우 빈 값은 false, 값이 있으면 true이다. 
 
   ```typescript
   let text: string = ""; 
